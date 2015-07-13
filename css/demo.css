@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+#project_con {
+    margin: 10px auto;
+    width: 960px;
+    border: 1px solid #D8D8D8;
+    height: 255px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+
+.rel{
+    position: relative;
+}
+#project_con .tabcon .content .tabcontent {
+    overflow: auto;
+}
+
+#project_con .tabcon .tabcontent > div {
+    display: none;
+}
+
+#project_con .tabcon .tabcontent > div.show {
+    display: block;
+}
+
+/**影像资料 灯箱效果**/
+#picScroll {
+    margin: 10px auto;
+    position: relative;
+    width: 795px;
+    padding: 10px 0;
+    background: #fff;
+    overflow: hidden;
+    margin-top: 35px;
+    z-index: 10;
+}
+
+#prev,#next {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    width: 48px;
+    z-index: 11;
+    height: 85px;
+    background: url(../images/arw_shouye_l.png) no-repeat;
+}
+
+#next {
+    right: 10px;
+    left: auto;
+    background: url("../images/arw_shouye_r.png") no-repeat;
+}
+#next.disabled{
+    background:url("../images/arw_r_disabled.png") no-repeat; ;
+}
+#prev.disabled{
+    background:url("../images/arw_l_disabled.png") no-repeat; ;
+}
+
+#picScroll ul {
+    position: relative;
+    width:9999px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    left: 0px;
+    list-style: none;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    -webkit-backface-visibility:hidden;
+    -webkit-perspective:1000px;
+    backface-visibility:hidden;
+    perspective:1000px;
+    -moz-backface-visibility:hidden;
+    -moz-perspective:1000px;
+    -o-backface-visibility:hidden;
+    -o-perspective:1000px;
+
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+}
+#picScroll ul>li {
+    float:left;
+    border:4px solid #C1BFC0;
+    margin:0 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+#picScroll ul>li:hover {
+    border-color: #a3a1a2;
+}
+#picScroll ul>li img{
+    float:left;
+    width:140px;
+    height: 135px;
+    vertical-align: top;
+    background: url("../images/loading.gif") no-repeat center center;
+}
+.piccontent .comment{
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    line-height: 30px;
+    height:30px;
+    color:#666666;
+    margin-bottom: 30px;
+}
