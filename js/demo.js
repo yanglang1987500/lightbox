@@ -21,7 +21,6 @@ require.config({
 
 var transformSupport = false;
 require(['domReady', 'jquery','lightbox'], function (doc, $,lightbox) {
-    alert(1)
     var supports = (function() {
         var div = document.createElement('div'),
             vendors = 'Khtml O Moz Webkit'.split(' '),
