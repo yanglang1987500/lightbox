@@ -7,6 +7,7 @@
     z-index: 100000;
     left:0;
     top:0;
+    font-size: 12px;
 }
 .lightbox .prev,.lightbox .next{
     position: fixed;
@@ -106,11 +107,11 @@
     background-color: #fff;
     display: block;
     padding: 5px 10px 5px 45px;
-    width: 145px;
+    width: 110px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -125px;
+    margin-left: -55px;
     margin-top: -35px;
     display: none;
 }
