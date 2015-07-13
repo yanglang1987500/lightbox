@@ -14,12 +14,14 @@ require.config({
     shim: {
         'jquery.mousewheel':['jquery'],
         'lightbox':['jquery','jquery.mousewheel']
-    }
+    },
+    waitSeconds:0
 });
 
 
 var transformSupport = false;
-require(['domReady!', 'jquery','lightbox'], function (doc, $,lightbox) {
+require(['domReady', 'jquery','lightbox'], function (doc, $,lightbox) {
+    alert(1)
     var supports = (function() {
         var div = document.createElement('div'),
             vendors = 'Khtml O Moz Webkit'.split(' '),
